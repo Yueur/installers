@@ -19,8 +19,7 @@ sudo apt-get -y install docker-ce
 sudo docker volume create portainer_data
 sudo docker run --name portainer --restart=always -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
-sudo docker volume create jenkins_home
-sudo docker run --name jenkins --restart=always -d -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
-# Backing up data
-# docker cp $ID:/var/jenkins_home
+directory=$(dirname $0)
+
+$directory/docker/jenkins/exec.sh
 
