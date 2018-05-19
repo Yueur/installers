@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM alpine
 
 ENV SAMBA_CNF_PATH /etc/samba/smb.conf
 ENV SAMBA_DEFAULT_SHARE_PATH /var/samba/public_share/
