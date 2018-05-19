@@ -7,8 +7,8 @@ ENV DEFAULT_BASH_PATH /bin/bash
 
 # Install samba
 RUN apk update && \
-	apk -y upgrade && \
-	apk -y add bash openrc samba && \
+	apk upgrade && \
+	apk add bash openrc samba && \
 	rm -rf /var/cache/apk/* && \
 	cp /etc/samba/smb.conf /etc/samba/smb.conf.old && \
 	mkdir $SAMBA_DEFAULT_SHARE_PATH -p && \
