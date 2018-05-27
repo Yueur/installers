@@ -1,6 +1,8 @@
 
 Please note that an expty proxy_param.conf gives the same results...
 
+NGINX Solution for Apache ProxyPassReverse [link](https://www.nginx.com/resources/wiki/start/topics/examples/likeapache/)
+
 ## Location bloc matching
 [source](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms)
 
