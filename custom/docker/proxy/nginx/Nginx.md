@@ -1,4 +1,6 @@
 
+Please note that an expty proxy_param.conf gives the same results...
+
 ## Location bloc matching
 [source](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms)
 
